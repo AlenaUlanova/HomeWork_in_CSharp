@@ -1,0 +1,57 @@
+/*Task2*/
+
+int max = 0;
+int min = 0;
+Console.Write("Enter first: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter second: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+     if(firstNumber > secondNumber){
+         max = firstNumber;
+         min = secondNumber;
+      }
+      else{
+         max = secondNumber;
+         min = firstNumber;
+      }
+Console.WriteLine("max = " + max + " , " + "min = " + min);
+
+/*Task4*/
+
+int max = 0;
+Console.Write("Enter first: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter second: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter third: ");
+int thirdNumber = Convert.ToInt32(Console.ReadLine());
+
+if(firstNumber > max){
+    max = firstNumber;
+}
+if(secondNumber > max){
+    max = secondNumber;
+}
+if(thirdNumber > max){
+    max = thirdNumber;
+}
+Console.WriteLine("max = " + max);
+
+
+/*Task6*/
+
+Console.Write("Enter: ");
+int number = Convert.ToInt32(Console.ReadLine());
+bool isEven = (number % 2 == 0) ? true : false;
+Console.WriteLine(isEven);
+
+/*Task8*/
+Console.Write("Enter: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int evenNumber = 2;
+        if(number > 1){
+            while(evenNumber <= number){
+                Console.Write(evenNumber + " ");
+                evenNumber = evenNumber + 2;
+            }
+        }
